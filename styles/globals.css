@@ -63,18 +63,18 @@ body {
   /* background-color: #222434; */
 }
 
-@media not all and (min-resolution:.001dpcm) {
-  @media only screen and (max-width: 768px) {
-    html { -webkit-text-size-adjust:none; }  /* should render everything * 0.8 */ 
-    body {
-      font-size: 50%;
-    }
-  }
-}
-
 * {
   padding: 0;
   margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nunito', sans-serif;
+  color: #0a303a;
+  margin-top: 0px;
+  font-style: normal;
+  font-weight: 900;
+  text-transform: inherit;
 }
 
 button {
@@ -106,8 +106,6 @@ a, a:focus {
 }
 
 /* footer social links */
-.socialLinkIcon{
-}
 
 .socialLinkIcon:hover{
   color: rgb(216, 216, 216);
@@ -132,7 +130,6 @@ a, a:focus {
   border-radius: 10px;
   background-color: rgba(128, 128, 128, 0.8);
 }
-
 
 /* ----------------------New---------------------------- */
 /* h1,
@@ -265,4 +262,3 @@ p {
 .page {
   min-height: calc(100vh - (20vh + 10rem));
 }
-

@@ -1,6 +1,13 @@
-import Document, { DocumentContext, DocumentInitialProps, Html, Head, Main, NextScript } from 'next/document';
-import { JSXElementConstructor, ReactElement, ReactFragment } from 'react';
-import { ServerStyleSheet } from 'styled-components';
+import Document, {
+  DocumentContext,
+  DocumentInitialProps,
+  Html,
+  Head,
+  Main,
+  NextScript,
+} from "next/document";
+import { JSXElementConstructor, ReactElement, ReactFragment } from "react";
+import { ServerStyleSheet } from "styled-components";
 
 export default class MyDocument extends Document {
   static async getInitialProps(
@@ -25,19 +32,31 @@ export default class MyDocument extends Document {
             {sheet.getStyleElement()}
           </>
         ),
-      } as ReactFragment | ReactElement<any, string | JSXElementConstructor<any>>[] | undefined | any;
+      } as
+        | ReactFragment
+        | ReactElement<any, string | JSXElementConstructor<any>>[]
+        | undefined
+        | any;
     } finally {
       sheet.seal();
     }
-  }  // below is completely optional...
-  // create a custom 'render' method for SEO tags 
+  } // below is completely optional...
+  // create a custom 'render' method for SEO tags
   render() {
     return (
       <Html lang="en">
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Russo+One&display=swap" rel="stylesheet" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&family=Russo+One&display=swap"
+            rel="stylesheet"
+          />
+
+          <link
+            href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />
