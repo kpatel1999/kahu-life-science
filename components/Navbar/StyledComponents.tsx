@@ -10,7 +10,7 @@ export const Wrapper = styled.nav<WrapperI>`
   top: 0;
   left: 0;
   width: 100%;
-  height: 8rem;
+  height: 6rem;
   z-index: 10000;
   transition: all 0.4s ease-out;
   background-color: ${(props) => (props.isWhite ? "white" : "transparent")};
