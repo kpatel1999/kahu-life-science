@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react';
 
 // Next
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
 // Utils
 // import getImageUrl from "utils/getImageUrl";
 
 // Components
-import * as S from "./StyledComponents";
-import ContectUs from "./Sub";
+import * as S from './StyledComponents';
+import ContectUs from './Sub';
 
 const Contact = () => {
   return (
@@ -17,7 +17,7 @@ const Contact = () => {
       <S.Row>
         <S.ContactTitle>
           <S.SubTitle>Contact Us</S.SubTitle>
-          <S.Title>Let's Talk Question.</S.Title>
+          <S.Title>Let`s Talk Question.</S.Title>
         </S.ContactTitle>
         <S.ContactWrapContent>
           <S.Description>
@@ -42,7 +42,7 @@ const Contact = () => {
                 name="message"
                 id="message"
                 placeholder="Opinion..."
-                style={{ height: "125px" }}
+                style={{ height: '125px' }}
               />
             </S.FormGrp>
 
