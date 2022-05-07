@@ -8,7 +8,7 @@ const ContectUs = () => {
           <div className="contact-title mb-20">
             <h5 className="sub-title">Contact Us</h5>
             <h2 className="title">
-              Let's Talk Question<span>.</span>
+              Let`s Talk Question<span>.</span>
             </h2>
           </div>
           <div className="contact-wrap-content">
@@ -85,17 +85,17 @@ const ContectUs = () => {
             <div className="contact-social">
               <ul>
                 <li>
-                  <a href="/#">
+                  <a href="#">
                     <i className="fab fa-facebook-f"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="/#">
+                  <a href="#">
                     <i className="fab fa-twitter"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="/#">
+                  <a href="#">
                     <i className="fab fa-linkedin-in"></i>
                   </a>
                 </li>

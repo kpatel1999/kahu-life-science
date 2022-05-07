@@ -21,6 +21,10 @@ const Contact = () => {
   return (
     <section>
       <S.Row>
+        <S.ContactTitle>
+          <S.SubTitle>Contact Us</S.SubTitle>
+          <S.Title>Let`s Talk Question.</S.Title>
+        </S.ContactTitle>
         <S.ContactWrapContent>
           <S.ContactTitle>
             <S.SubTitle>Contact Us</S.SubTitle>
