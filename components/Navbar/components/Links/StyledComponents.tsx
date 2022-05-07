@@ -49,7 +49,7 @@ export const LinkAnchor = styled.a<TextI>`
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: ${props => (props.isActive ? "#00a651" : "#666")};
+  color: ${(props) => (props.isActive ? "#00a651" : "#666")};
   transition: all 0.35s ease-out;
   transform-origin: center;
 
@@ -61,5 +61,5 @@ export const LinkAnchor = styled.a<TextI>`
 export const Button = styled.button`
   display: flex;
   align-items: center;
-  padding: 1.5rem 1.6rem;
+  padding: 1.5rem 0.8rem;
 `;
