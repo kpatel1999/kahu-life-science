@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function index() {
   return (
@@ -10,9 +10,9 @@ function index() {
       >
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img className="w-100" src="/img/carousel-1.jpg" alt="Image" />
+            <img className="w-100" src="imgs/hero-bg.png" alt="Image" />
             <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
-              <div className="p-3" style={{ maxWidth: '900px' }}>
+              <div className="p-3" style={{ maxWidth: "900px" }}>
                 <h5 className="text-white text-uppercase mb-3 animated slideInDown">
                   Creative & Innovative
                 </h5>
@@ -37,7 +37,7 @@ function index() {
           <div className="carousel-item">
             <img className="w-100" src="/img/carousel-2.jpg" alt="Image" />
             <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
-              <div className="p-3" style={{ maxWidth: '900px' }}>
+              <div className="p-3" style={{ maxWidth: "900px" }}>
                 <h5 className="text-white text-uppercase mb-3 animated slideInDown">
                   Creative & Innovative
                 </h5>

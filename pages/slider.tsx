@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import { NextPage } from "next";
 import FullLayout from "../components/FullLayout";
-import Sliderpage from "../components/Slider";
+import Sliderpage from "../components/HomePage/components/Slider";
 
 const Slider: NextPage = () => {
   return (

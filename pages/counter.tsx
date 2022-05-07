@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import { NextPage } from "next";
 import FullLayout from "../components/FullLayout";
-import CounterPage from "../components/CounterPage";
+import CounterPage from "../components/HomePage/components/Counter";
 
 const Counter: NextPage = () => {
   return (
