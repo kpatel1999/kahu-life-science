@@ -615,7 +615,7 @@ const HomeComponent = () => {
                         <p className="mb-0">&copy; <a className="text-white border-bottom" href="#">Your Site Name</a>. All Rights Reserved. 
 						
 						Designed by <a className="text-white border-bottom" href="https://htmlcodex.com">HTML Codex</a></p>
-                        <br />Distributed By: <a className="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                        <br />Distributed By: <a className="border-bottom" href="https://themewagon.com" target="_blank" rel="noreferrer">ThemeWagon</a>
                     </div>
                 </div>
             </div>

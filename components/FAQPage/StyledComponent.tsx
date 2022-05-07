@@ -81,9 +81,11 @@ export const Info = styled.p`
 `;
 // .question
 export const Header = styled.header`
+  display: flex;
   color: green;
   margin-bottom: 0;
   margin-top: 0.5rem;
+  justify-content: space-between;
 `;
 
 // .question header h4 {
@@ -95,7 +97,7 @@ export const Button = styled.button`
   // background: transparent;
   // border-color: transparent;
   width: 2rem;
-  height: 2rem;
+  height: 1.5rem;
   background: var(--clr-grey-special);
   display: flex;
   align-items: center;
