@@ -6,7 +6,7 @@ interface WrapperI {
 }
 
 export const Wrapper = styled.nav<WrapperI>`
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
