@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { useProductsContext } from "../../../../context/products_context";
+// import { useProductsContext } from "../../../../context/products_context";
 import GridView from "../GridView";
 import ListView from "../ListView";
 import Sort from "../Sort";

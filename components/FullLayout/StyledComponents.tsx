@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
 export const Main = styled.main`
   position: relative;
   max-width: 124rem;
-  padding: 0 5rem;
+  // padding: 0 5rem;
   margin: 0 auto;
   box-sizing: border-box;
 
