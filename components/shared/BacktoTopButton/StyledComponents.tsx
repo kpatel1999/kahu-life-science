@@ -10,7 +10,6 @@ export const AiOutlineArrowUps = styled(FaAngleUp)`
   bottom: 40px;
   right: 40px;
   z-index: 1000;
-  background: #ffffff94;
   border: 3px solid #b163f9;
   color: #b163f9;
   border-radius: 50%;

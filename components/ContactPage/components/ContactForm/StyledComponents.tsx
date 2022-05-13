@@ -214,4 +214,8 @@ export const SocialWrapper = styled.a<SocialWrapperI>`
   color: #fff;
   font-size: 14px;
   cursor: pointer;
+
+  &:hover {
+    color: #000;
+  }
 `;
