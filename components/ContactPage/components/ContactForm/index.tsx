@@ -21,10 +21,6 @@ const Contact = () => {
   return (
     <section>
       <S.Row>
-        <S.ContactTitle>
-          <S.SubTitle>Contact Us</S.SubTitle>
-          <S.Title>Let`s Talk Question.</S.Title>
-        </S.ContactTitle>
         <S.ContactWrapContent>
           <S.ContactTitle>
             <S.SubTitle>Contact Us</S.SubTitle>
@@ -116,6 +112,16 @@ const Contact = () => {
           </div>
         </S.ContectInto>
       </S.Row>
+
+      <div style={{ width: "100%", marginTop: "50px" }}>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14681.85027620312!2d72.4952314!3d23.0801568!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf955692e13272fcf!2sScience%20City%20ahmedabad!5e0!3m2!1sen!2sin!4v1652478372621!5m2!1sen!2sin"
+          width="100%"
+          height="400"
+          frameBorder="0"
+          style={{ border: 0 }}
+        ></iframe>
+      </div>
     </section>
   );
 };

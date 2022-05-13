@@ -1,7 +1,7 @@
 // Import Icons
 import { BiHome } from "react-icons/bi";
 import { ImInfo } from "react-icons/im";
-import { FaTelegramPlane, FaGlobeAmericas } from "react-icons/fa";
+import { FaTelegramPlane, FaGlobeAmericas, FaQuestion } from "react-icons/fa";
 import { RiProductHuntLine } from "react-icons/ri";
 
 const linksData = [
@@ -23,7 +23,7 @@ const linksData = [
   {
     title: "FAQ",
     url: "/faq",
-    Icon: <FaGlobeAmericas size={16} />,
+    Icon: <FaQuestion size={16} />,
   },
   {
     title: "About",
