@@ -1,36 +1,39 @@
-import React, { useState } from "react";
-import * as MS from "../ContactPage/components/ContactForm/StyledComponents";
 import data from "./data";
-import SingleQuestion from "./question";
 
 // Components
+import SingleQuestion from "./question";
+import { TitleColor } from "../shared/StyledComponents";
 import * as S from "./StyledComponent";
+import Image from "../shared/NewImage";
 
 const FAQPage = () => {
-  //   const [questions, setQuestions] = useState(data);
   return (
-    <main>
-      <S.Container>
-        <MS.ContactImgContainer>
-          <MS.ContactImg src="imgs/contact_img.png" alt="" />
-        </MS.ContactImgContainer>
-        <div>
-          <S.MainTitle>questions and answers about login</S.MainTitle>
-          {data.length && (
-            <S.HeaderInfo>
-              {data.map((question) => {
-                return (
-                  <SingleQuestion
-                    key={question.id}
-                    {...question}
-                  ></SingleQuestion>
-                );
-              })}
-            </S.HeaderInfo>
-          )}
-        </div>
-      </S.Container>
-    </main>
+    <S.Container>
+      <S.ContectInto>
+        <S.MainTitle>
+          Frequently Asked Questions<TitleColor>.</TitleColor>
+        </S.MainTitle>
+        <Image
+          src="/imgs/faq.svg"
+          objectPosition="center"
+          alt="kahu life science faq"
+        />
+      </S.ContectInto>
+      <S.QuestionWrapper className="smoll-scrollbar">
+        {data.length && (
+          <S.HeaderInfo>
+            {data.map((question) => {
+              return (
+                <SingleQuestion
+                  key={question.id}
+                  {...question}
+                ></SingleQuestion>
+              );
+            })}
+          </S.HeaderInfo>
+        )}
+      </S.QuestionWrapper>
+    </S.Container>
   );
 };
 

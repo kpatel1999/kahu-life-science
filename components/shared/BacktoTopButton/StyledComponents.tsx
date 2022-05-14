@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { FaAngleUp } from "react-icons/fa";
+import { green, sky } from "../../../styles/colors";
 
 export const TopToBtm = styled.div`
   position: relative;
@@ -10,8 +11,8 @@ export const AiOutlineArrowUps = styled(FaAngleUp)`
   bottom: 40px;
   right: 40px;
   z-index: 1000;
-  border: 3px solid #b163f9;
-  color: #b163f9;
+  border: 3px solid ${sky};
+  color: ${sky};
   border-radius: 50%;
   height: 35px;
   width: 35px;
@@ -22,8 +23,8 @@ export const AiOutlineArrowUps = styled(FaAngleUp)`
 
   &:hover {
     animation: none;
-    color: #f78cb7;
-    border: 3px solid #f78cb7;
+    color: ${green};
+    border: 3px solid ${green};
     background: #fff;
   }
 
