@@ -20,6 +20,7 @@ export const MainFooter = styled.footer`
   @media only screen and (max-width: 768px) {
     display: block;
     padding: 2rem;
+    margin-top: 0;
   }
 `;
 

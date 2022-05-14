@@ -1,44 +1,46 @@
 /* section */
-
 import styled from "styled-components";
+import * as MS from "../ContactPage/components/ContactForm/StyledComponents";
 
 export const HeaderInfo = styled.section`
   width: 100%;
   margin: 0 auto;
   max-width: var(--max-width);
-
-
-  // @media screen and (min-width: 992px) {
-  //   width: 95vw;
-  // }
 `;
 
-/*
-  =============== 
-  Questions
-  ===============
-  */
+export const ContectInto = styled(MS.ContectInto)`
+  max-width: 100%;
+  padding: 2rem;
 
-// main {
-//   min-height: 100vh;
-//   /* using flex because of better browser support */
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
+  @media only screen and (max-width: 768px) {
+    height: 30%;
+    margin-bottom: 1rem;
+  }
+`;
+
+export const QuestionWrapper = styled.div`
+  height: 35rem;
+  overflow-y: auto;
+  padding-right: 1rem;
+
+  @media only screen and (max-width: 768px) {
+    height: 100%;
+    padding-right: 0;
+  }
+`;
 
 export const Container = styled.div`
   margin: 8rem auto;
   background: #fff;
   border-radius: 1rem;
-  padding: 2.5rem 2rem;
-  max-width: 920px;
+  max-width: 70%;
   display: grid;
-  gap: 1rem 2rem;
+  gap: 2rem;
+  grid-template-columns: 23rem 1fr;
 
-  @media screen and (min-width: 992px) {
-    display: grid;
-    grid-template-columns: 250px 1fr;
+  @media only screen and (max-width: 768px) {
+    display: block;
+    max-width: 100%;
   }
 `;
 
@@ -46,21 +48,16 @@ export const MainTitle = styled.h3`
   font-size: 2.75rem;
   line-height: 1.2;
   font-weight: 500;
+  padding-bottom: 1rem;
 
   @media only screen and (mix-width: 740px) {
     font-size: 1.75rem;
   }
 `;
 
-// .container h3 {
-//   line-height: 1.2;
-//   font-weight: 500;
-// }
-
 export const Question = styled.article`
   padding: 1rem 1.5rem;
   border: 2px solid #eae6eb;
-  
   margin-bottom: 1rem;
   border-radius: 1rem;
   box-shadow: var(--light-shadow);
@@ -88,14 +85,11 @@ export const Header = styled.header`
   justify-content: space-between;
 `;
 
-// .question header h4 {
 export const HeaderTitle = styled.h4`
   margin-bottom: 0;
 `;
 
 export const Button = styled.button`
-  // background: transparent;
-  // border-color: transparent;
   width: 2rem;
   height: 1.5rem;
   background: var(--clr-grey-special);

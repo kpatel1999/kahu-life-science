@@ -16,6 +16,7 @@ import { AiOutlineTwitter } from "react-icons/ai";
 // Components
 import * as S from "./StyledComponents";
 import ContectUs from "./Sub";
+import { TitleColor } from "../../../shared/StyledComponents";
 
 const Contact = () => {
   return (
@@ -25,7 +26,7 @@ const Contact = () => {
           <S.ContactTitle>
             <S.SubTitle>Contact Us</S.SubTitle>
             <S.Title>
-              Let's Talk Question<span style={{ color: "#36ccaf" }}>.</span>
+              Let's Talk Question<TitleColor>.</TitleColor>
             </S.Title>
           </S.ContactTitle>
           <S.Description>

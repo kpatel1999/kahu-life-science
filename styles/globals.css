@@ -131,6 +131,11 @@ a, a:focus {
   background-color: rgba(128, 128, 128, 0.8);
 }
 
+.smoll-scrollbar ::-webkit-scrollbar{
+  width: 6px !important;
+  scrollbar-width: thin;
+}
+
 /* ----------------------New---------------------------- */
 /* h1,
 h2,
