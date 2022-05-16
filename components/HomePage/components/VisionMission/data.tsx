@@ -1,22 +1,17 @@
 import { GiCompass, GiDiamondHard, GiStabbedNote } from "react-icons/gi";
+import { sky, green } from "../../../../styles/colors";
 
 export const services = [
   {
     id: 1,
-    icon: <GiCompass />,
-    title: "mission",
-    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi",
+    icon: <GiDiamondHard />,
+    title: "Vision",
+    text: "we become global healthcare organization and to be recognized as domestic and internationally integrated healthcare and pharmaceutical company through Innovation, Quality and Competence.To become the leading pharmaceutical player in the industry by assuring high quality standards and cost effective products at all times. We want to mark our presence in the society by creating a portfolio of low cost medicines available to all.",
   },
   {
     id: 2,
-    icon: <GiDiamondHard />,
-    title: "vision",
-    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi",
-  },
-  {
-    id: 3,
-    icon: <GiStabbedNote />,
-    title: "history",
-    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi",
+    icon: <GiCompass />,
+    title: "Mission",
+    text: "our social responsibilities of delivering highest standard healthcare services to all segments of society without compromising on our core values of integrity, good ethics and commitment.To become a globally acclaimed pharmaceutical company through development and introduction of wide portfolio of Pharmaceutical.",
   },
 ];
