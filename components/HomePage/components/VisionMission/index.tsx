@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { green } from "../../../../styles/colors";
 import { services } from "./data";
 const Services = () => {
   return (
@@ -35,11 +36,10 @@ const Services = () => {
 const Wrapper = styled.section`
   h3,
   h4 {
-    color: var(--clr-primary-1);
+    color: ${green};
   }
   padding: 5rem 0;
-
-  background: var(--clr-primary-10);
+  background: #f5f2eb;
 
   .header h3 {
     margin-bottom: 2rem;
@@ -55,10 +55,12 @@ const Wrapper = styled.section`
     gap: 2.5rem;
   }
   .service {
-    background: var(--clr-primary-7);
+    background: #fff;
     text-align: center;
     padding: 2.5rem 2rem;
-    border-radius: var(--radius);
+    border-radius: 1rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+      rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     p {
       color: var(--clr-primary-2);
     }

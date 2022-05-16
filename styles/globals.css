@@ -121,7 +121,7 @@ a, a:focus {
 
 * ::-webkit-scrollbar
 {
-  width: 0.9rem;
+  width: 10px;
   background-color: transparent;
 }
 
