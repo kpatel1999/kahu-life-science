@@ -1,48 +1,135 @@
-import React from 'react'
+import React from "react";
+import styled from "styled-components";
+import { MainTitle } from "../FAQPage/StyledComponent";
+import Image from "../shared/NewImage";
+import { TitleColor } from "../shared/StyledComponents";
 
-function index() {
-  return (
-    <div>
-        <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div className="container py-5">
-            <div className="row g-5">
-                <div className="col-lg-7">
-                    <div className="section-title position-relative pb-3 mb-5">
-                        <h5 className="fw-bold text-primary text-uppercase">About Us</h5>
-                        <h1 className="mb-0">The Best IT Solution With 10 Years of Experience</h1>
-                    </div>
-                    <p className="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
-                    <div className="row g-0 mb-3">
-                        <div className="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
-                            <h5 className="mb-3"><i className="fa fa-check text-primary me-3"></i>Award Winning</h5>
-                            <h5 className="mb-3"><i className="fa fa-check text-primary me-3"></i>Professional Staff</h5>
-                        </div>
-                        <div className="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
-                            <h5 className="mb-3"><i className="fa fa-check text-primary me-3"></i>24/7 Support</h5>
-                            <h5 className="mb-3"><i className="fa fa-check text-primary me-3"></i>Fair Prices</h5>
-                        </div>
-                    </div>
-                    <div className="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
-                        <div className="bg-primary d-flex align-items-center justify-content-center rounded" style={{width: "60px;" ,height: "60px;"}}>
-                            <i className="fa fa-phone-alt text-white"></i>
-                        </div>
-                        <div className="ps-4">
-                            <h5 className="mb-2">Call to ask any question</h5>
-                            <h4 className="text-primary mb-0">+012 345 6789</h4>
-                        </div>
-                    </div>
-                    <a href="quote.html" className="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Request A Quote</a>
-                </div>
-                <div className="col-lg-5" style={{minHeight: "500px;"}}>
-                    <div className="position-relative h-100">
-                        <img className="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="/img/about.jpg"/>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-  )
+export const Container = styled.div`
+  margin: 8rem;
+
+  @media only screen and (max-width: 768px) {
+    margin: 8rem 0;
+  }
+`;
+const Row = styled.div`
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-bottom: 5rem;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+
+const RowRevers = styled(Row)`
+  flex-direction: row-reverse;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+
+export const ImageWrapper = styled.div`
+  width: 100%;
+  background-color: #c8ecda;
+  border-radius: 10px;
 }
 
-export default index
+  @media only screen and (max-width: 768px) {
+    height: 30%;
+    margin-bottom: 1rem;
+  }
+`;
+
+const DetailsWrapper = styled.div`
+  padding: 2rem;
+  width: 123rem;
+
+  @media only screen and (max-width: 768px) {
+    padding: 0;
+    width: 100%;
+  }
+`;
+
+const AboutPage = () => {
+  return (
+    <Container>
+      <Row>
+        <DetailsWrapper>
+          <MainTitle>
+            What is <TitleColor>Kahu Lifescience</TitleColor>?
+          </MainTitle>
+          <p>
+            Kahu Lifescience LLP is one of the most trusted pharmaceutical
+            exporter in India . We are a brand name in the pharmaceutical
+            industry who are always consistent with their services and are one
+            of the leading pharmaceutical exporter in India. <br />
+            <br />
+            We are a government authorized company who are experts in providing
+            a premium platform to ensure all kinds of pharmaceutical supplies
+            are done across the globe without compromising the quality of the
+            products.
+            <br /> <br />
+            The last 10 years of our journey as a pharmaceutical wholesaler is a
+            golden example of showcasing the professional attitude with a great
+            precision. We transport most of the on-demand drugs to the desired
+            location. The breaches of time between the import and export of
+            every drug shipment is taken care of the precise packing of the
+            stock with the help of latest monitoring devices for temperature
+            control. Hence, the demographics quotient is very well covered by
+            Kahu Lifescience LLP.
+          </p>
+        </DetailsWrapper>
+        <ImageWrapper>
+          <Image
+            src="/imgs/about_1.svg"
+            objectPosition="center"
+            alt="kahu life science about-us"
+            height={250}
+            width={250}
+          />
+        </ImageWrapper>
+      </Row>
+
+      <RowRevers>
+        <DetailsWrapper>
+          <MainTitle>
+            What is <TitleColor>Kahu Lifescience</TitleColor>?
+          </MainTitle>
+          <p>
+            Working on almost all domains of medicines, Kings Global hold an
+            important name in dealing with pharmaceuticals ranges of Oncology,
+            Nephrology, Gastroenterology, Vaccines, and many more. However,
+            other segments of medicines are also covered excellently by us.
+            <br />
+            <br /> As an authorized leading exporter in the market, we have been
+            consistent in offering an adequate supply of Generic Drugs and
+            Branded Drugs to the domestic as well as international Vendors.
+            <br />
+            <br /> Kahu Lifescience has emerged as an ultimate “ King “ of
+            quality, cost and supply of drugs in “ Global” Market. Hence,
+            justifying its name by its deeds.
+            <br />
+            <br />
+            We are always sailing our boat to cover the upcoming milestones with
+            unmatched quality in the industry. Happy clients from all over the
+            world are our achievement and we feel pride in continuing our
+            partnership for many coming years!
+          </p>
+        </DetailsWrapper>
+        <ImageWrapper>
+          <Image
+            src="/imgs/about_2.svg"
+            objectPosition="center"
+            alt="kahu life science about-us"
+            height={250}
+            width={250}
+          />
+        </ImageWrapper>
+      </RowRevers>
+    </Container>
+  );
+};
+
+export default AboutPage;

@@ -27,7 +27,7 @@ const linksData = [
   },
   {
     title: "About",
-    url: "/blog",
+    url: "/about",
     Icon: <ImInfo size={16} />,
   },
   {
