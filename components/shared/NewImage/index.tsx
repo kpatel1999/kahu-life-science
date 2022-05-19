@@ -5,8 +5,8 @@ const Image = ({
   src,
   alt,
   layout = "responsive",
-  width = 100, // prop for layout != fill
-  height = 100, // prop for layout != fill
+  width = "100%", // prop for layout != fill
+  height = "100%", // prop for layout != fill
   objectFit = "cover", // prop for layout == fill
   sizes = "100vw", // prop for layout == fill
   unoptimized = false,

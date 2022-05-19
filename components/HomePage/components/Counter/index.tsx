@@ -100,8 +100,8 @@ function index() {
 
   return (
     <Row>
-      {datas.map((item) => (
-        <Card {...item} />
+      {datas.map((item, index) => (
+        <Card key={index} {...item} />
       ))}
     </Row>
   );
