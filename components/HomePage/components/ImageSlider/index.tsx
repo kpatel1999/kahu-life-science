@@ -9,7 +9,7 @@ const SectionCenter = styled.div`
   margin: 4rem 0;
 `;
 
-const UserSlider = () => {
+const ImageSlider = () => {
   const images = [
     {
       alt: "slider img 1",
@@ -23,7 +23,7 @@ const UserSlider = () => {
 
   return (
     <SectionCenter>
-      <Carousel autoPlay infiniteLoop>
+      <Carousel autoPlay infiniteLoop showThumbs={false}>
         {images.map((image) => (
           <Image
             key={image.alt}
@@ -38,4 +38,4 @@ const UserSlider = () => {
   );
 };
 
-export default UserSlider;
+export default ImageSlider;

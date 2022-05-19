@@ -1,8 +1,5 @@
 // Utils
-import { BsPlay } from "react-icons/bs";
 import styled from "styled-components";
-import { lav2, pink } from "../../styles/colors";
-// import { lav2, pink } from "";
 
 export const MainFooter = styled.footer`
   position: relative;
@@ -79,5 +76,3 @@ export const ContactIconWrapper = styled.div`
   width: 1.7rem;
   text-align: center;
 `;
-
-export const ImageWrapper = styled.div``;

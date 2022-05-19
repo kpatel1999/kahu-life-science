@@ -1,9 +1,9 @@
-import Image from "next/image";
 import { AiOutlineTwitter, AiFillInstagram } from "react-icons/ai";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import * as MS from "../ContactPage/components/ContactForm/StyledComponents";
 import linksData from "../Navbar/components/linksData";
 import Link from "next/link";
+import Image from "next/image";
 
 import * as S from "./StyledComponents";
 import { MdLocationOn } from "react-icons/md";

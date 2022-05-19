@@ -7,7 +7,7 @@ import Patnears from "./components/Patnears";
 import VisionMission from "./components/VisionMission";
 import CountUp from "./components/Counter";
 import Slider from "./components/Slider";
-import UserSlider from "./components/UserSlider";
+import ImageSlider from "./components/ImageSlider";
 
 const Homepage = () => {
   return (
@@ -16,7 +16,7 @@ const Homepage = () => {
       {/* <Hero /> */}
       <Patnears />
       <CountUp />
-      <UserSlider />
+      <ImageSlider />
       <VisionMission />
     </S.Wrapper>
   );
