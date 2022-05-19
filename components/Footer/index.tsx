@@ -53,8 +53,8 @@ const Footer = () => {
       <S.LinkWrapper>
         <div>
           <h4>Quick Links</h4>
-          {linksData.map((link) => (
-            <Link href={link.url} passHref>
+          {linksData.map((link, index) => (
+            <Link key={index} href={link.url} passHref>
               <S.LinkText>{link.title}</S.LinkText>
             </Link>
           ))}

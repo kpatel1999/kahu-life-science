@@ -1,5 +1,4 @@
 // Components
-import Carousel from "react-multi-carousel";
 import ImageContainer from "../../../shared/Image";
 import * as S from "./StyledComponents";
 
