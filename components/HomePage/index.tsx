@@ -8,6 +8,7 @@ import VisionMission from "./components/VisionMission";
 import CountUp from "./components/Counter";
 import Slider from "./components/Slider";
 import ImageSlider from "./components/ImageSlider";
+import Teams from "./components/Teams";
 
 const Homepage = () => {
   return (
@@ -17,6 +18,7 @@ const Homepage = () => {
       <Patnears />
       <CountUp />
       <ImageSlider />
+      <Teams />
       <VisionMission />
     </S.Wrapper>
   );

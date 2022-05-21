@@ -1,8 +1,17 @@
 import React from "react";
 import styled from "styled-components";
-import { Carousel } from "react-responsive-carousel";
 import Image from "../../../shared/NewImage";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from "swiper";
 
 const SectionCenter = styled.div`
   text-align: center;
@@ -23,17 +32,33 @@ const ImageSlider = () => {
 
   return (
     <SectionCenter>
-      <Carousel autoPlay infiniteLoop showThumbs={false}>
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={30}
+        centeredSlides={true}
+        loop={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
         {images.map((image) => (
-          <Image
-            key={image.alt}
-            src={image.src}
-            objectPosition="center"
-            alt={image.alt}
-            height={29.5}
-          />
+          <SwiperSlide key={image.alt}>
+            <Image
+              src={image.src}
+              objectPosition="center"
+              alt={image.alt}
+              height={29.5}
+            />
+          </SwiperSlide>
         ))}
-      </Carousel>
+      </Swiper>
     </SectionCenter>
   );
 };
