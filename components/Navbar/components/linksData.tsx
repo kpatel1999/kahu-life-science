@@ -16,8 +16,8 @@ const linksData = [
     Icon: <RiProductHuntLine size={16} />,
   },
   {
-    title: "Global Rresence",
-    url: "/games",
+    title: "Global Presence",
+    url: "/global-presence",
     Icon: <FaGlobeAmericas size={16} />,
   },
   {

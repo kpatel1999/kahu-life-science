@@ -13,9 +13,9 @@ import Teams from "./components/Teams";
 const Homepage = () => {
   return (
     <S.Wrapper>
-      <Slider />
-      {/* <Hero /> */}
-      <Patnears />
+      {/* <Slider /> */}
+      <Hero />
+      {/* <Patnears /> */}
       <CountUp />
       <ImageSlider />
       <Teams />

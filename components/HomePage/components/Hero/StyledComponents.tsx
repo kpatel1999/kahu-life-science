@@ -1,43 +1,45 @@
 // Utils
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const Wrapper = styled.section`
   position: relative;
   display: flex;
+  height: 39rem;
+  margin-bottom: 10rem;
+
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 0;
+    margin-top: 2rem;
+    height: 27rem;
+  }
 `;
 
 export const TitleContainer = styled.div`
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   width: 50%;
-  padding-top: 23rem;
-  z-index: 10;
+  padding-top: 16rem;
+  padding-left: 4rem;
 
   @media only screen and (max-width: 768px) {
     width: 100%;
-    margin-top: 60rem;
-    padding-top: 0;
-  }
-
-  @media only screen and (max-width: 768px) {
-    margin-top: 40rem;
+    margin-top: 18rem;
+    padding-left: 0rem;
     padding-top: 0;
   }
 `;
 
 export const Title = styled.h1`
-  font-size: 3.2rem;
-  margin-bottom: 4rem;
-  
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+
   @media only screen and (max-width: 1220px) {
     font-size: 3.5rem;
   }
-  
+
   @media only screen and (max-width: 1100px) {
     font-size: 3rem;
   }
-  
+
   @media only screen and (max-width: 900px) {
     font-size: 2.3rem;
     text-align: center;
@@ -57,10 +59,9 @@ export const Description = styled.h3`
 export const ImageWrapper = styled.div`
   position: absolute;
   right: 0px;
-  bottom: 13%;
+  bottom: 5%;
   width: 58%;
   height: 100%;
-  transform: translateY(-5%);
 
   @media only screen and (max-width: 768px) {
     width: 100%;
@@ -71,7 +72,18 @@ export const ImageContainer = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
-  z-index: 1;
+`;
+
+export const TitleImageContainer = styled.div`
+  width: 100%;
+  height: 30%;
+  position: relative;
+  display: inherit;
+  top: 8.2rem;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const Span = styled.span`
@@ -79,7 +91,6 @@ export const Span = styled.span`
 `;
 
 export const ButtonWrapper = styled.div`
-
   @media only screen and (max-width: 768px) {
     display: flex;
     justify-content: center;
