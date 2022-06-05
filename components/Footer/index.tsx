@@ -18,10 +18,10 @@ const Footer = () => {
         <Image src="/imgs/logo_text.svg" height={32} width={170} />
 
         <S.Discription>
-          Lorem ipsum dolor amet consectetur adi pisicing elit sed eiusm tempor
-          incididunt ut labore dolore magna aliqua enim ad minim veniam
-          quis.nostrud exercita.laboris nisi ut aliquip ea commodo conse quatuis
-          aute irure.
+          Kahu Lifescience LLP is one of the most trusted pharmaceutical
+          exporter in India . We are a brand name in the pharmaceutical industry
+          who are always consistent with their services0 and are one of the
+          leading pharmaceutical exporter in India.
         </S.Discription>
         <S.IconWrapper>
           <MS.SocialUl>
@@ -65,7 +65,7 @@ const Footer = () => {
           <MS.Ul>
             <MS.Li>
               <S.ContactIconWrapper>
-                <MdLocationOn size={25} />
+                <MdLocationOn size={25} color="#ffffffeb" />
               </S.ContactIconWrapper>
               &nbsp;
               <S.LinkText>
@@ -74,7 +74,7 @@ const Footer = () => {
             </MS.Li>
             <MS.Li>
               <S.ContactIconWrapper>
-                <FaPhoneAlt size={19} />
+                <FaPhoneAlt size={19} color="#ffffffeb" />
               </S.ContactIconWrapper>
               &nbsp;
               <a href="tel:+815390757">
@@ -83,7 +83,7 @@ const Footer = () => {
             </MS.Li>
             <MS.Li>
               <S.ContactIconWrapper>
-                <HiOutlineMail size={25} />
+                <HiOutlineMail size={25} color="#ffffffeb" />
               </S.ContactIconWrapper>
               &nbsp;
               <a href="mailto:someone@example.com">
