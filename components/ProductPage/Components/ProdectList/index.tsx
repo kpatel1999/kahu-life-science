@@ -21,10 +21,10 @@ const ProductList = () => {
     if (!data) {
       try {
         const response = await axios.get(
-          "https://api.airtable.com/v0/appAsWbzEIoqTqRKm/product",
+          "https://api.airtable.com/v0/appq48Qe8LgxSLCoc/product",
           {
             headers: {
-              Authorization: "Bearer key5CHVBqA16BQs61",
+              Authorization: "Bearer keyMymW7eT0XyeEbE",
             },
           }
         );

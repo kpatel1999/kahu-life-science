@@ -1,5 +1,6 @@
 // Utils
 import styled from "styled-components";
+import { green } from "../../../../styles/colors";
 
 interface TextI {
   isActive: boolean;
@@ -54,7 +55,7 @@ export const LinkAnchor = styled.a<TextI>`
   transform-origin: center;
 
   &:hover {
-    color: #000;
+    color: ${green};
   }
 `;
 

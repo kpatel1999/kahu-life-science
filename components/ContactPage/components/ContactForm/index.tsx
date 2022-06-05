@@ -1,28 +1,69 @@
-import React from "react";
-
-// Next
-import Image from "next/image";
-import Link from "next/link";
-
-// Utils
 import { MdLocationOn } from "react-icons/md";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { HiMailOpen } from "react-icons/hi";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineTwitter } from "react-icons/ai";
-
-// import getImageUrl from "utils/getImageUrl";
+import { useForm } from "react-hook-form";
+import { Toaster } from "react-hot-toast";
+import axios from "axios";
+import toast from "react-hot-toast";
 
 // Components
 import * as S from "./StyledComponents";
-import ContectUs from "./Sub";
 import { TitleColor } from "../../../shared/StyledComponents";
+import { CardButton } from "../../../HomePage/components/Teams/StyledComponents";
+
+export interface IFormInput {
+  name: string;
+  email: string;
+  message: string;
+}
 
 const Contact = () => {
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm<IFormInput>();
+
+  const onSubmit = async (contactFormValues: IFormInput) => {
+    const notification = toast.loading("Sending...", {
+      style: {
+        background: "white",
+        color: "green",
+        fontSize: "17px",
+        padding: "10px",
+      },
+    });
+
+    try {
+      const request = await axios.post(
+        "https://api.airtable.com/v0/appq48Qe8LgxSLCoc/contact",
+        { records: [{ fields: { ...contactFormValues } }] },
+        {
+          headers: {
+            Authorization: "Bearer keyMymW7eT0XyeEbE",
+          },
+        }
+      );
+
+      if (request.data) {
+        reset();
+        toast.success("Your message has been sent.");
+      }
+    } catch (error) {
+      toast.error("Message not sent try again");
+    } finally {
+      toast.dismiss(notification);
+    }
+  };
+
   return (
     <section>
+      <Toaster position="bottom-left" />
       <S.Row>
-        <S.ContactWrapContent>
+        <div>
           <S.ContactTitle>
             <S.SubTitle>Contact Us</S.SubTitle>
             <S.Title>
@@ -34,35 +75,57 @@ const Contact = () => {
             from an ancient, extinct wolf, and the modern grey.
           </S.Description>
 
-          <S.Form>
+          <form onSubmit={handleSubmit(onSubmit)}>
             <S.FormGrp>
-              <S.Lable>Your Name *</S.Lable>
-              <S.Input type="text" id="name" placeholder="Jon Deo..." />
+              <S.Lable>Your Name*</S.Lable>
+              <S.Input
+                {...register("name", {
+                  required: true,
+                })}
+                id="name"
+                placeholder="Jon Deo..."
+              />
+              {errors?.name && (
+                <S.ErrorMessage>Please enter the name</S.ErrorMessage>
+              )}
             </S.FormGrp>
 
             <S.FormGrp>
-              <S.Lable>Your Email *</S.Lable>
-              <S.Input type="text" id="email" placeholder="info.example@.com" />
+              <S.Lable>Your Email*</S.Lable>
+              <S.Input
+                {...register("email", {
+                  required: true,
+                  pattern: /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/,
+                })}
+                id="email"
+                placeholder="info.example@.com"
+              />
+              {errors?.email?.type === "required" && (
+                <S.ErrorMessage>Please enter the email</S.ErrorMessage>
+              )}
+              {errors?.email?.type === "pattern" && (
+                <S.ErrorMessage>Please enter valid email</S.ErrorMessage>
+              )}
             </S.FormGrp>
 
             <S.FormGrp>
-              <S.Lable>Your Message *</S.Lable>
+              <S.Lable>Your Message*</S.Lable>
               <S.TextArea
-                name="message"
+                {...register("message", {
+                  required: true,
+                })}
                 id="message"
                 placeholder="Opinion..."
                 style={{ height: "125px" }}
               />
+              {errors?.message && (
+                <S.ErrorMessage>Please enter the message</S.ErrorMessage>
+              )}
             </S.FormGrp>
 
-            <S.CheckBoxGrp>
-              <S.Checkbox type="checkbox" />
-              <S.CheckboxLable>Don’t show your email address</S.CheckboxLable>
-            </S.CheckBoxGrp>
-
-            <S.Button type="button">Send Now</S.Button>
-          </S.Form>
-        </S.ContactWrapContent>
+            <CardButton type="submit">Send Now</CardButton>
+          </form>
+        </div>
 
         <S.ContectInto>
           <S.ContactImgContainer>
