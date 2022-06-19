@@ -42,7 +42,7 @@ const Teams = () => {
       },
     },
   ];
-
+  // width: 90vw;
   return (
     <S.Section className="App">
       {datas.map(({ name, key, designation, details, profile }) => (

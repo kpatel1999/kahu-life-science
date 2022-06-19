@@ -1,5 +1,6 @@
 // Utils
 import styled from "styled-components";
+import { CardButton } from "../Teams/StyledComponents";
 
 export const Wrapper = styled.section`
   position: relative;
@@ -97,4 +98,9 @@ export const ButtonWrapper = styled.div`
     width: 100%;
     left: 0;
   }
+`;
+
+export const Button = styled(CardButton)`
+  padding: 20px;
+  width: 40%;
 `;
