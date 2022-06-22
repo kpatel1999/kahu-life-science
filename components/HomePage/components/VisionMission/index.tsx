@@ -41,6 +41,10 @@ const Wrapper = styled.section`
   padding: 5rem 0;
   background: #f5f2eb;
 
+  @media only screen and (max-width: 740px) {
+    background: none;
+  }
+
   .header h3 {
     margin-bottom: 2rem;
   }
