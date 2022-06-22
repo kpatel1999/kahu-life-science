@@ -14,6 +14,7 @@ const Row = styled.div`
 
   @media only screen and (max-width: 740px) {
     display: block;
+    margin-top: 30%;
   }
 `;
 
@@ -31,6 +32,7 @@ const CardContainer = styled.div`
 
   @media only screen and (max-width: 740px) {
     width: 100%;
+    padding: 0;
   }
 `;
 
@@ -43,6 +45,10 @@ export const Count = styled.h2`
   -webkit-transition-duration: 600ms;
   transition-duration: 600ms;
   font-weight: 700 !important;
+
+  @media only screen and (max-width: 740px) {
+    font-size: 40px;
+  }
 `;
 
 export const TextWrapper = styled.div`
@@ -54,6 +60,10 @@ export const TextWrapper = styled.div`
   margin-bottom: 30px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+
+  @media only screen and (max-width: 740px) {
+    padding: 25px 40px;
+  }
 
   &:hover ${Count} {
     color: ${green};

@@ -9,6 +9,8 @@ export const Section = styled.section`
 
   @media only screen and (max-width: 740px) {
     flex-direction: column;
+    justify-content: center;
+    display: grid;
   }
 `;
 
@@ -22,6 +24,10 @@ export const CardWrapper = styled.div`
   font-family: Quicksand, arial, sans-serif;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 25px 50px -5px;
   border-radius: 1.5rem;
+
+  @media only screen and (max-width: 740px) {
+    width: 320px;
+  }
 `;
 
 export const Banner = styled.div`
@@ -35,6 +41,10 @@ export const Banner = styled.div`
   justify-content: center;
   box-sizing: border-box;
   margin-bottom: 6rem;
+
+  @media only screen and (max-width: 740px) {
+    height: 8rem;
+  }
 `;
 
 export const ProfileImage = styled.div`

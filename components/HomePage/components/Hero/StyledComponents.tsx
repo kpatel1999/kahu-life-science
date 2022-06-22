@@ -103,4 +103,9 @@ export const ButtonWrapper = styled.div`
 export const Button = styled(CardButton)`
   padding: 20px;
   width: 40%;
+
+  @media only screen and (max-width: 740px) {
+    width: 100%;
+    hight: 30%;
+  }
 `;

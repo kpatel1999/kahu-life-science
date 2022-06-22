@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { FaAngleUp } from "react-icons/fa";
-import { green, sky } from "../../../styles/colors";
+import { green, rose } from "../../../styles/colors";
 
 export const TopToBtm = styled.div`
   position: relative;
@@ -11,11 +11,11 @@ export const AiOutlineArrowUps = styled(FaAngleUp)`
   bottom: 40px;
   right: 40px;
   z-index: 1000;
-  border: 3px solid ${sky};
-  color: ${sky};
+  border: 3px solid ${rose};
+  color: ${rose};
   border-radius: 50%;
-  height: 35px;
-  width: 35px;
+  height: 40px;
+  width: 40px;
   padding: 6px;
   cursor: pointer;
   animation: movebtn 3s ease-in-out infinite;
@@ -25,11 +25,10 @@ export const AiOutlineArrowUps = styled(FaAngleUp)`
     animation: none;
     color: ${green};
     border: 3px solid ${green};
-    background: #fff;
   }
 
   @media only screen and (max-width: 740px) {
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
   }
 `;
