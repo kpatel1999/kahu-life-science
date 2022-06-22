@@ -4,6 +4,7 @@ import React from "react";
 import * as S from "./StyledComponents";
 import Image from "../../../shared/NewImage";
 import { CardButton } from "../Teams/StyledComponents";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -21,7 +22,9 @@ const Hero = () => {
             loading="lazy"
           />
         </S.TitleImageContainer>
-        <S.Button>Contact Us</S.Button>
+        <Link href="/contact">
+          <S.Button>Contact Us</S.Button>
+        </Link>
         <S.ButtonWrapper></S.ButtonWrapper>
       </S.TitleContainer>
       <S.ImageWrapper>
@@ -32,7 +35,7 @@ const Hero = () => {
             width={20}
             alt="site logo"
             loading="lazy"
-          />ww
+          />
         </S.ImageContainer>
       </S.ImageWrapper>
     </S.Wrapper>
