@@ -52,6 +52,46 @@ export default class MyDocument extends Document {
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
             crossOrigin="anonymous"
           />
+
+          <meta
+            name="google-site-verification"
+            content="B-I6F18gDigwegKX-aXiZmKSJr5b_AjVSyE2Xub-Tsw"
+          />
+
+          <meta
+            http-equiv="Content-Type"
+            content="text/html; charset=utf-8"
+            charSet="utf-8"
+          />
+          <meta
+            http-equiv="Content-Type"
+            content="text/html; charset=ISO-8859-1"
+          />
+
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+          <meta name="googlebot" content="noindex" />
+          <meta name="robots" content="noindex,nofollow" />
+          <meta name="robots" content="max-image-preview:large" />
+
+          <meta name="geo.region" content="IN-GJ" />
+          <meta name="geo.placename" content="Ahmedabad" />
+          <meta name="geo.position" content="23.021624;72.579707" />
+          <meta name="ICBM" content="23.021624, 72.579707" />
+
+          <meta
+            name="description"
+            content="Kahu life science LLP is a limited liability partnership limited company based in Ahmedabad, India and was incorporated on 31/12/2019."
+          />
+          <meta property="og:title" content="Kahulife Science" />
+          <meta
+            property="og:description"
+            content="Kahu life science LLP is a limited liability partnership limited company based in Ahmedabad, India and was incorporated on 31/12/2019."
+          />
+          <meta property="og:url" content="https://www.kahulifescience.com" />
+          <meta property="og:type" content="website" />
+          <link rel="icon" href="/favicon.ico" />
+
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link

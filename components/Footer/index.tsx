@@ -14,8 +14,18 @@ const Footer = () => {
   return (
     <S.MainFooter>
       <S.DetailsWrapper>
-        <Image src="/favicon.ico" height={54} width={54} />
-        <Image src="/imgs/logo_text.svg" height={32} width={170} />
+        <Image
+          src="/favicon.ico"
+          height={54}
+          width={54}
+          alt="kahu life science"
+        />
+        <Image
+          src="/imgs/logo_text.svg"
+          height={32}
+          width={170}
+          alt="kahu life science"
+        />
 
         <S.Discription>
           Kahu Lifescience LLP is one of the most trusted pharmaceutical
@@ -26,12 +36,20 @@ const Footer = () => {
         <S.IconWrapper>
           <MS.SocialUl>
             <MS.SocialLi>
-              <MS.SocialWrapper color="#385594">
+              <MS.SocialWrapper
+                color="#385594"
+                href="https://www.facebook.com/checkpoint/828281030927956/?next=https%3A%2F%2Fwww.facebook.com%2Fkahulifescience%2F"
+                target="_blank"
+              >
                 <FaFacebookF size={20} />
               </MS.SocialWrapper>
             </MS.SocialLi>
             <MS.SocialLi>
-              <MS.SocialWrapper color="#fb3958">
+              <MS.SocialWrapper
+                color="#fb3958"
+                href="https://www.instagram.com/kahulifescience/"
+                target="_blank"
+              >
                 <AiFillInstagram size={20} />
               </MS.SocialWrapper>
             </MS.SocialLi>
@@ -41,7 +59,11 @@ const Footer = () => {
               </MS.SocialWrapper>
             </MS.SocialLi>
             <MS.SocialLi>
-              <MS.SocialWrapper color="#1976d2">
+              <MS.SocialWrapper
+                color="#1976d2"
+                href="https://www.linkedin.com/in/vishwas-jani-81b5ba18a/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=in"
+                target="_blank"
+              >
                 <FaLinkedinIn size={20} />
               </MS.SocialWrapper>
             </MS.SocialLi>
@@ -69,7 +91,8 @@ const Footer = () => {
               </S.ContactIconWrapper>
               &nbsp;
               <S.LinkText>
-                W84 New Park Lan, New York, NY 4586 United States
+                402, Himalaya Emerald, Shyamal, Ahmedabad, <br />
+                Gujarat, India 380015
               </S.LinkText>
             </MS.Li>
             <MS.Li>
@@ -78,7 +101,7 @@ const Footer = () => {
               </S.ContactIconWrapper>
               &nbsp;
               <a href="tel:+815390757">
-                <S.LinkText>+47 333 78 901</S.LinkText>
+                <S.LinkText>+91 0000000000</S.LinkText>
               </a>
             </MS.Li>
             <MS.Li>
@@ -87,7 +110,7 @@ const Footer = () => {
               </S.ContactIconWrapper>
               &nbsp;
               <a href="mailto:someone@example.com">
-                <S.LinkText>info@example.com</S.LinkText>
+                <S.LinkText>kahulifescience@gmail.com</S.LinkText>
               </a>
             </MS.Li>
           </MS.Ul>
