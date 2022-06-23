@@ -66,6 +66,7 @@ export const ImageWrapper = styled.div`
 
   @media only screen and (max-width: 768px) {
     width: 100%;
+    top: 0rem;
   }
 `;
 

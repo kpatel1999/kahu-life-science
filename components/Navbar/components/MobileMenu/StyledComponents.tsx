@@ -16,13 +16,13 @@ export const Wrapper = styled.div<WrapperI>`
   right: 0;
   transition: transform 0.5s ease-in-out;
   transform: translateY(-57rem);
-  transform: ${(props) => props.isOpen ? "translateY(0rem)" : 'translateY(-57rem)'};
+  transform: ${(props) =>
+    props.isOpen ? "translateY(0rem)" : "translateY(-57rem)"};
   z-index: 1000;
 `;
 
-
 export const MenuContainer = styled.div`
-  padding-bottom: 2rem;
+  padding-bottom: 8rem;
   background-color: white;
   box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.31);
   display: none;
@@ -54,7 +54,7 @@ export const Text = styled.span`
   line-height: 2rem;
 
   @media only screen and (max-width: 500px) {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
 `;
 
@@ -62,7 +62,7 @@ export const MenuButton = styled.button`
   width: 100%;
   padding: 0.8rem 4rem;
 
-  @media only screen and (max-width: 768px) {
-    padding: 2rem;
-  }
+  // @media only screen and (max-width: 768px) {
+  //   padding: 2rem;
+  // }
 `;

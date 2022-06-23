@@ -64,6 +64,10 @@ export const TextBox = styled.div`
 export const ModalTitle = styled.h2`
   font-size: 2rem;
   text-align: center;
+
+  @media only screen and (max-width: 740px) {
+    margin-top: 37px;
+  }
 `;
 
 export const Text = styled.p`
@@ -74,7 +78,7 @@ export const Text = styled.p`
 export const IconButton = styled.button`
   position: absolute;
   right: 0.5rem;
-  top: 1.5rem;
+  top: 0.6rem;
   transform: translate(50%, -50%);
   display: flex;
   align-items: center;
@@ -82,6 +86,10 @@ export const IconButton = styled.button`
 
   svg {
     transition: all 0.2s ease-out;
+  }
+
+  @media only screen and (max-width: 740px) {
+    top: -1.5rem;
   }
 
   &:hover svg {
