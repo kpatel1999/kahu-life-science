@@ -15,9 +15,9 @@ const Home: NextPage = () => {
           content="B-I6F18gDigwegKX-aXiZmKSJr5b_AjVSyE2Xub-Tsw"
         />
 
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta
-          http-equiv="Content-Type"
+          httpEquiv="Content-Type"
           content="text/html; charset=ISO-8859-1"
         />
 
