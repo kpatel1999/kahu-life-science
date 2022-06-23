@@ -3,7 +3,6 @@ import React from "react";
 // Components
 import * as S from "./StyledComponents";
 import Image from "../../../shared/NewImage";
-import { CardButton } from "../Teams/StyledComponents";
 import Link from "next/link";
 
 const Hero = () => {

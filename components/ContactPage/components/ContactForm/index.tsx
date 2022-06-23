@@ -71,8 +71,8 @@ const Contact = () => {
             </S.Title>
           </S.ContactTitle>
           <S.Description>
-            The domestic dog is a doiated dendant of the wolf. The dog derived
-            from an ancient, extinct wolf, and the modern grey.
+            If you have any further questions or queries please do not hesitate
+            to get in touch.
           </S.Description>
 
           <form onSubmit={handleSubmit(onSubmit)}>
@@ -138,20 +138,21 @@ const Contact = () => {
                   <MdLocationOn size={16} />
                 </S.IconContainer>
                 <S.IconText>
-                  W84 New Park Lan, New York, NY 4586 United States
+                  402, Himalaya Emerald, Shyamal, Ahmedabad, <br />
+                  Gujarat, India 380015
                 </S.IconText>
               </S.Li>
               <S.Li>
                 <S.IconContainer>
                   <BsFillTelephoneFill size={12} />
                 </S.IconContainer>
-                <S.IconText>+9 (256) 254 9568</S.IconText>
+                <S.IconText>+91 0000000000</S.IconText>
               </S.Li>
               <S.Li>
                 <S.IconContainer>
                   <HiMailOpen width={18} height={13} />
                 </S.IconContainer>
-                <S.IconText>Contact@ info.com</S.IconText>
+                <S.IconText>kahulifescience@gmail.com</S.IconText>
               </S.Li>
             </S.Ul>
           </div>

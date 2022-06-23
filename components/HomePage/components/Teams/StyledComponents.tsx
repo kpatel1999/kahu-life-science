@@ -31,7 +31,7 @@ export const CardWrapper = styled.div`
 `;
 
 export const Banner = styled.div`
-  background-image: url(/imgs/team_bg.jpg);
+  background-image: url(/imgs/team_bg.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -68,8 +68,9 @@ export const Name = styled.h4`
 `;
 
 export const Title = styled.span`
-  color: #a0a0a0;
-  font-size: 0.85rem;
+  color: #0000006b;
+  font-weight: 700;
+  font-size: 13px;
   text-align: center padding 0;
   padding-size: 1.2rem;
 `;
