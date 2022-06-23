@@ -59,12 +59,12 @@ export default class MyDocument extends Document {
           />
 
           <meta
-            http-equiv="Content-Type"
+            httpEquiv="Content-Type"
             content="text/html; charset=utf-8"
             charSet="utf-8"
           />
           <meta
-            http-equiv="Content-Type"
+            httpEquiv="Content-Type"
             content="text/html; charset=ISO-8859-1"
           />
 
