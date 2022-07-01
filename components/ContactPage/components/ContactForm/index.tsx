@@ -2,7 +2,7 @@ import { MdLocationOn } from "react-icons/md";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { HiMailOpen } from "react-icons/hi";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import { AiOutlineTwitter } from "react-icons/ai";
+import { AiOutlineTwitter, AiFillInstagram } from "react-icons/ai";
 import { useForm } from "react-hook-form";
 import { Toaster } from "react-hot-toast";
 import axios from "axios";
@@ -159,17 +159,34 @@ const Contact = () => {
           <div>
             <S.SocialUl>
               <S.SocialLi>
-                <S.SocialWrapper color="#385594">
+                <S.SocialWrapper
+                  color="#385594"
+                  href="https://www.facebook.com/checkpoint/828281030927956/?next=https%3A%2F%2Fwww.facebook.com%2Fkahulifescience%2F"
+                  target="_blank"
+                >
                   <FaFacebookF size={20} />
                 </S.SocialWrapper>
               </S.SocialLi>
               <S.SocialLi>
-                <S.SocialWrapper color="#4eabee">
+                <S.SocialWrapper
+                  color="#fb3958"
+                  href="https://www.instagram.com/kahulifescience/"
+                  target="_blank"
+                >
+                  <AiFillInstagram size={20} />
+                </S.SocialWrapper>
+              </S.SocialLi>
+              <S.SocialLi>
+                <S.SocialWrapper color="#4eabee" href="#" target="_blank">
                   <AiOutlineTwitter size={20} />
                 </S.SocialWrapper>
               </S.SocialLi>
               <S.SocialLi>
-                <S.SocialWrapper color="#1976d2">
+                <S.SocialWrapper
+                  color="#1976d2"
+                  href="https://www.linkedin.com/in/vishwas-jani-81b5ba18a/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=in"
+                  target="_blank"
+                >
                   <FaLinkedinIn size={20} />
                 </S.SocialWrapper>
               </S.SocialLi>

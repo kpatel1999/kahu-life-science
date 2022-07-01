@@ -134,6 +134,11 @@ export const IconContainer = styled.div`
 
 export const IconText = styled.div`
   flex-grow: 1;
+
+  @media only screen and (max-width: 740px) {
+    word-break: break-word;
+  }
+}
 `;
 
 export const ContactSocial = styled.div`
