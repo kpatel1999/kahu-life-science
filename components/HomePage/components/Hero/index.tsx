@@ -10,7 +10,7 @@ const Hero = () => {
     <S.Wrapper>
       <S.TitleContainer>
         <S.Title>Healthy Life!</S.Title>
-        <S.Title>&nbsp; &nbsp; Healthy Word!</S.Title>
+        <S.Title>&nbsp; &nbsp; Healthy World!</S.Title>
 
         <S.TitleImageContainer>
           <Image
